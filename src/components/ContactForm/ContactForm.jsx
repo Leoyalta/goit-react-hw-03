@@ -44,7 +44,7 @@ export default function ContactForm({ onAdd }) {
               type="text"
               name="userName"
               id="userName"
-              placeholder="Enter your name"
+              placeholder="Add contact name"
               className={css.field}
             ></Field>
             <ErrorMessage
@@ -61,7 +61,7 @@ export default function ContactForm({ onAdd }) {
               type="tel"
               name="number"
               id="number"
-              placeholder="Enter your number"
+              placeholder="Add contact number"
               className={css.field}
             ></Field>
             <ErrorMessage
