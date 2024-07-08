@@ -20,7 +20,7 @@ export default function App() {
       return [...prevContacts, NewContact];
     });
   };
-  const DelitTask = (contactId) => {
+  const DeleteTask = (contactId) => {
     setContacts((prevContacts) => {
       return prevContacts.filter((contact) => contact.id !== contactId);
     });
@@ -35,7 +35,7 @@ export default function App() {
       <h1> Phonebook</h1>
       <ContactForm onAdd={AddContact} />
       <SearchBox value={filter} onFilter={setFilter} />
-      <ContactList contacts={visibleContacts} onDelite={DelitTask} />
+      <ContactList contacts={visibleContacts} onDelete={DeleteTask} />
     </div>
   );
 }
